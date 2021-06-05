@@ -4,9 +4,9 @@ import Project from '../../components/layouts/project';
 export default function render() {
     return (
         <Project props={{
-            title: 'Epiphany',
+            title: 'Epiphany | Ian Conyers | izarooni',
             subtitle: 'My first website using Laravel — created in 2018',
-            description: 'Epiphany is the first website I created using a PHP framework in 2015'
+            description: 'Epiphany is the first website I created using Laravel, a PHP framework in 2015'
         }}>
             <section className="section">
                 <h1 className="title">Design</h1>

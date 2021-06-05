@@ -4,9 +4,9 @@ import Project from '../../components/layouts/project';
 export default function render() {
     return (
         <Project props={{
-            title: 'Eunoia',
+            title: 'Eunoia | Ian Conyers | izarooni',
             subtitle: 'My first PHP website — developed in 2015',
-            description: 'Eunoia is the first PHP basebone website I created in 2015'
+            description: 'Eunoia is the first barebone-PHP website I created in 2015'
         }}>
 
             <div className="section">
