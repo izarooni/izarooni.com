@@ -22,7 +22,7 @@
     transition: max-height 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-.project img:hover {
+.project img:hover, .project img:active {
     max-height: calc(var(--project-height) * 3);
 }
 
