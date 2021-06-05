@@ -21,7 +21,7 @@ const Project = ({ children, props }: any) => {
                 <meta name="og:description" content={props.description} />
                 <meta name="description" content={props.description} />
 
-                <meta name="robots" content="follow, index" />
+                <meta name="robots" content="nofollow, noindex" />
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                 <meta charSet="UTF-8" />
 
