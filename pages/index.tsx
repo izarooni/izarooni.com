@@ -54,7 +54,7 @@ export default function Home(props: any) {
                 <meta charSet="UTF-8" />
 
                 <link rel="icon" href="/favicon.ico" />
-                <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossOrigin="anonymous"></link>
+                <script src="https://kit.fontawesome.com/fa6beb4299.js" crossOrigin="anonymous" defer></script>
             </Head>
 
             <main>
