@@ -8,8 +8,8 @@ const Doodle = () => {
             @size: 100%;
             z-index: -1;
         }
-        @random { border-top: 1px solid #eee; }
-        @random { border-left: 1px solid #eee; }
+        @random { border-top: 1px solid #D3D3D3; }
+        @random { border-left: 1px solid #D3D3D3; }
         @random(.2) {
             :after {
                 content: '';
