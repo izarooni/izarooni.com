@@ -1,8 +1,8 @@
-import path from 'path';
-import { promises as fs } from 'fs';
+import React from 'react';
 
 import Head from 'next/head';
 import Link from 'next/link';
+import Image from 'next/image';
 import dynamic from 'next/dynamic';
 import styles from '../styles/Home.module.css';
 
@@ -13,12 +13,17 @@ const Doodle = dynamic(
 );
 
 export async function getStaticProps(context: any) {
-    const dir = path.join(process.cwd(), 'public/projects');
-    const files = await fs.readdir(dir);
-
     return {
         props: {
-            projects: files
+            projects: [
+                'epiphany',
+                'eunoia',
+                'izarooni',
+                'stoney-park',
+                'turning-tires',
+                'harbor',
+                'wonderking',
+            ]
         }
     };
 };
