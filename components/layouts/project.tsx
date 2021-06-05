@@ -36,7 +36,7 @@ const Project = ({ children, props }: any) => {
 
                 <Doodle></Doodle>
                 <section className="hero section">
-                    <h1 className="title">{props.title}</h1>
+                    <h1 className="title">{props.header}</h1>
                     <h4 className="subtitle">{props.subtitle}</h4>
                 </section>
             </header>
