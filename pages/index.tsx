@@ -12,24 +12,29 @@ const Doodle = dynamic(
     { ssr: false }
 );
 
-
 export async function getStaticProps(context: any) {
-    const dir = path.join(process.cwd(), 'public/projects')
-    const files = await fs.readdir(dir)
+    const dir = path.join(process.cwd(), 'public/projects');
+    const files = await fs.readdir(dir);
 
     return {
         props: {
             projects: files
-        },
-    }
-}
+        }
+    };
+};
 
 export default function Home(props: any) {
     return (
         <>
             <Head>
                 <title>Ian Conyers | izarooni</title>
-                <meta name="description" content="Ian Conyers (also goes by izarooni online) is a hobbist programmer and is always looking to learn new things." />
+
+                <meta name="og:title" content="Ian Conyers | izarooni" />
+                <meta name="og:site_name" content="Ian Conyers | izarooni" />
+                <meta name="og:image" content="https://izarooni.com/favicon.ico" />
+
+                <meta name="og:description" content='Ian Conyers, aka "izarooni" is a code monkey *cough* I mean hobbyist programmer...' />
+                <meta name="description" content='Ian Conyers, aka "izarooni" is a code monkey *cough* I mean hobbyist programmer...' />
 
                 <meta name="robots" content="follow, index" />
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -70,5 +75,5 @@ export default function Home(props: any) {
                 </div>
             </main>
         </>
-    )
-}
+    );
+};
