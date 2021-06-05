@@ -26,7 +26,7 @@ export default function render() {
 
             <header>
                 <Link href="/">
-                    <a><i className="is-size-1 fas fa-home"></i></a>
+                    <a><i className="ml-5 is-size-1 fas fa-home"></i></a>
                 </Link>
 
                 <Doodle></Doodle>
