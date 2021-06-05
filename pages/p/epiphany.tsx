@@ -14,7 +14,7 @@ export default function render() {
                 <div className="columns is-vcentered">
                     <div className="column">
                         <figure>
-                            <Image src="/projects/epiphany/thumbnail.jpg" alt="Screenshot of the design" width={1020} height={1000}></Image>
+                            <Image src="/projects/epiphany/thumbnail.webp" alt="Screenshot of the design" width={1020} height={1000}></Image>
                             <figcaption className="is-italic">Screenshot of the design</figcaption>
                         </figure>
                     </div>

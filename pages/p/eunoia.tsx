@@ -15,7 +15,7 @@ export default function render() {
                 <div className="columns is-vcentered">
                     <div className="column">
                         <figure>
-                            <Image src="/projects/eunoia/thumbnail.jpg" alt="Screenshot of website design" width={1920} height={1080}></Image>
+                            <Image src="/projects/eunoia/thumbnail.webp" alt="Screenshot of website design" width={1920} height={1080}></Image>
                             <figcaption className="is-italic">Screenshot of website design</figcaption>
                         </figure>
                     </div>
