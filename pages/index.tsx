@@ -79,7 +79,7 @@ export default function Home(props: any) {
                             {props.projects.map((p: string) => (
                                 <div key={p} className={`${styles.project} my-3`}>
                                     <Link href={`/p/${p}`}>
-                                        <a><img src={`/projects/${p}/thumbnail.jpg`} alt={`project ${p} thumbnail`} /></a>
+                                        <a><img src={`/projects/${p}/thumbnail.webp`} alt={`project ${p} thumbnail`} /></a>
                                     </Link>
                                 </div>
                             ))}
