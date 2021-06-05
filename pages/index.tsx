@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 import Head from 'next/head';
 import Link from 'next/link';
@@ -18,8 +18,10 @@ export async function getStaticProps(context: any) {
                 'eunoia',
                 'epiphany',
                 'izarooni',
-                'stoney-park',
+
                 'turning-tires',
+                'stoney-park',
+
                 'harbor',
                 'wonderking',
             ]
@@ -28,6 +30,13 @@ export async function getStaticProps(context: any) {
 };
 
 export default function Home(props: any) {
+    useEffect(() => {
+        setInterval(() => {
+            let doodle = document.querySelector('css-doodle');
+            if (doodle) doodle.update();
+        }, 1500);
+    });
+
     return (
         <>
             <Head>
