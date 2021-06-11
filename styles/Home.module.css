@@ -10,7 +10,7 @@
     object-position: top;
 
     border-radius: var(--radius-size);
-    border: 1px solid black;
+    border: 1px solid black !important;
 
     max-height: var(--project-height);
     height: auto;
