@@ -7,7 +7,7 @@ export default function render() {
             title: 'My Website | Ian Conyers | izarooni',
             header: 'My Website',
             subtitle: 'A place to show off',
-            description: 'izarooni.com (my portfolio website) is a place for me to show off projects'
+            description: 'izarooni.com (my portfolio website) is a place for me to show off my projects and skills.'
         }}>
 
 

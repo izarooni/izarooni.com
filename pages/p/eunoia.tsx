@@ -7,7 +7,7 @@ export default function render() {
             title: 'Eunoia | Ian Conyers | izarooni',
             header: 'Eunoia',
             subtitle: 'My first PHP website — created in 2015',
-            description: 'Eunoia is the first barebone-PHP website I created in 2015'
+            description: 'Eunoia is the first website I created in 2015 using a barebone PHP back-end.'
         }}>
 
             <div className="section">
