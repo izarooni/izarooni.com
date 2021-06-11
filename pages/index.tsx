@@ -58,7 +58,7 @@ export default function Home(props: any) {
             </Head>
 
             <main>
-                <div className="columns">
+                <div className="columns m-0">
                     <div className={`${styles.left} column is-flex is-justify-content-center is-align-items-center has-text-centered`}>
                         <Doodle></Doodle>
                         <div className="section">
@@ -74,8 +74,8 @@ export default function Home(props: any) {
                             </nav>
                         </div>
                     </div>
-                    <div className="column has-background-light">
-                        <div className="mt-2 is-flex is-flex-wrap-wrap">
+                    <div className={`${styles.right} column has-background-light`}>
+                        <div className="is-flex is-flex-wrap-wrap px-3">
                             {props.projects.map((p: string) => (
                                 <div key={p} className={`${styles.project} my-3`}>
                                     <Link href={`/p/${p}`}>

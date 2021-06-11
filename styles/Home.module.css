@@ -1,9 +1,6 @@
 .project {
     width: 100%;
 
-    margin-left: 1rem;
-    margin-right: 1rem;
-
     /* hide overflow content caused by border-radius */
     overflow: hidden;
 }
@@ -22,7 +19,8 @@
     transition: max-height 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-.project img:hover, .project img:active {
+.project img:hover,
+.project img:active {
     max-height: calc(var(--project-height) * 3);
 }
 
@@ -31,6 +29,10 @@
     max-height: 100vh; /* full screen desktop */
 
     top: 0;
+}
+
+.right {
+    min-height: 100vh;
 }
 
 /* md screens */
