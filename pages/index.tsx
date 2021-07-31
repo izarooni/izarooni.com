@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { createPopper } from '@popperjs/core';
 
 import Head from 'next/head';
 import Link from 'next/link';
@@ -31,10 +32,11 @@ export async function getStaticProps(context: any) {
 
 export default function Home(props: any) {
     useEffect(() => {
+        createPopper(document.querySelector('#x-discord'), document.querySelector('#x-discord-tt'));
         setInterval(() => {
             let doodle: any = document.querySelector('css-doodle');
             if (doodle) doodle.update();
-        }, 1500);
+        }, 1000);
     });
 
     return (
@@ -68,8 +70,8 @@ export default function Home(props: any) {
                             </div>
                             <nav className="level is-mobile is-size-3 is-justify-content-space-evenly">
                                 <a href="https://github.com/izarooni"><i className="level-item fab fa-github-alt"></i></a>
-                                <a href="https://www.instagram.com/izarooni/"><i className="level-item fab fa-instagram"></i></a>
-                                <a href=""><i className="level-item fab fa-discord"></i></a>
+                                <a href="https://www.instagram.com/play.izarooni/"><i className="level-item fab fa-instagram"></i></a>
+                                <a href="http://discord.com/users/128440358953680896"><i id="x-discord" className="level-item fab fa-discord"></i></a>
                                 <a href="https://www.linkedin.com/in/ian-conyers"><i className="level-item fab fa-linkedin-in"></i></a>
                             </nav>
                         </div>
