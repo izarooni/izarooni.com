@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-import { createPopper } from '@popperjs/core';
 
 import Head from 'next/head';
 import Link from 'next/link';
@@ -32,7 +31,6 @@ export async function getStaticProps(context: any) {
 
 export default function Home(props: any) {
     useEffect(() => {
-        createPopper(document.querySelector('#x-discord'), document.querySelector('#x-discord-tt'));
         setInterval(() => {
             let doodle: any = document.querySelector('css-doodle');
             if (doodle) doodle.update();
