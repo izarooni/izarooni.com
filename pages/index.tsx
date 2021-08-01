@@ -66,11 +66,20 @@ export default function Home(props: any) {
                                 <h1 className="title is-size-1">Ian Conyers</h1>
                                 <h2 className="subtitle">is a hobbyist developer</h2>
                             </div>
+
+                            <span className="icon-text has-text-weight-bold mb-3">
+                                <a href="https://discord.com/users/128440358953680896">
+                                    <span className="icon is-vcentered">
+                                        <i className="is-size-3 level-item fab fa-discord"></i>
+                                    </span>
+                                    <span>&nbsp; izarooni#4063</span>
+                                </a>
+                            </span>
+
                             <nav className="level is-mobile is-size-3 is-justify-content-space-evenly">
                                 <a href="https://github.com/izarooni"><i className="level-item fab fa-github-alt"></i></a>
-                                <a href="https://www.instagram.com/play.izarooni/"><i className="level-item fab fa-instagram"></i></a>
-                                <a href="https://discord.com/users/128440358953680896"><i id="x-discord" className="level-item fab fa-discord"></i></a>
                                 <a href="https://www.linkedin.com/in/ian-conyers"><i className="level-item fab fa-linkedin-in"></i></a>
+                                <a href="https://www.instagram.com/izarooni/"><i className="level-item fab fa-instagram"></i></a>
                             </nav>
                         </div>
                     </div>
