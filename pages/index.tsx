@@ -19,8 +19,9 @@ export async function getStaticProps(context: any) {
                 'epiphany',
                 'izarooni',
 
-                'turning-tires',
                 'stoney-park',
+                'citizens-street',
+                'cloverms',
 
                 'harbor',
                 'wonderking',
