@@ -86,7 +86,7 @@ export default function render() {
                                 </figure>
                             </div>
                             <div className="column content">
-                                <p>Finding unavailable reservations means finding other reservations conflicting with the user's choice of dates. If the <b>requested</b> date of arrival (in) intersects with the departure (out) date of <b>other</b> reservations, the selected campsite from the <b>existing</b> reservations are declared as unavailable. This is also the case for the requested date of departure conflicting with arrival dates of existing reservations.</p>
+                                <p>Finding unavailable reservations means finding other reservations conflicting with the user's choice of dates. If the <b>requested</b> date of arrival (in) intersects with the departure (out) date of <b>other</b> reservations, the campsites from <b>existing</b> reservations are declared as unavailable. This is also the case for the requested date of departure conflicting with arrival dates of existing reservations.</p>
                                 <code className="is-block is-full">
                                     if other_departure &gt; this_arrival
                                     <br />
@@ -102,11 +102,11 @@ export default function render() {
                                         <Image src="/projects/stoney-park/reservation_visualized.webp" width={128} height={158} />
                                     </div>
                                     <div className="column content">
-                                        The requested arrival date is January 3 which conflicts with the first reservation's departure date, January 3 and the requested departure date is January 6 which conflicts with the second reservation's arrival date.
+                                        The requested arrival date is January 3, which conflicts with the first reservation's departure date (January 3). And at the same time, the requested departure date (January 6) conflicts with the second reservation's arrival date.
                                     </div>
                                 </div>
                                 <p>
-                                    Using this data, we can get the selected campsites of the existing reservations (aka the red boxes) and declare them unavailable to the requested reservation.
+                                    Using this data, we can get the existing reservations selected campsites and declare them unavailable to the requested reservation.
                                 </p>
                             </div>
                         </div>
