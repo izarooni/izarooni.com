@@ -20,7 +20,6 @@ export async function getStaticProps(context: any) {
                 'izarooni',
 
                 'stoney-park',
-                'citizens-street',
                 'cloverms',
 
                 'harbor',
