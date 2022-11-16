@@ -69,12 +69,10 @@ export default function Home(props: any) {
                             </div>
 
                             <span className="icon-text has-text-weight-bold mb-3">
-                                <a href="https://discord.com/users/128440358953680896">
-                                    <span className="icon is-vcentered">
-                                        <i className="is-size-3 level-item fab fa-discord"></i>
-                                    </span>
-                                    <span>&nbsp; izarooni#4063</span>
-                                </a>
+                                <span className="icon is-vcentered">
+                                    <i className="is-size-3 level-item fab fa-discord"></i>
+                                </span>
+                                <span>&nbsp; izarooni#4063</span>
                             </span>
 
                             <nav className="level is-mobile is-size-3 is-justify-content-space-evenly">
