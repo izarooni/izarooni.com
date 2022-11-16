@@ -12,7 +12,7 @@ export default function render() {
 
             <div className="section">
                 <h1 className="title">Design</h1>
-                <div className="columns is-vcentered">
+                <div className="columns">
                     <div className="column">
                         <figure>
                             <Image src="/projects/eunoia/thumbnail.webp" alt="Screenshot of website design" width={1920} height={1080}></Image>
@@ -28,7 +28,7 @@ export default function render() {
             </div>
             <div className="section">
                 <h1 className="title">Development</h1>
-                <div className="columns is-vcentered">
+                <div className="columns">
                     <div className="column content">
                         I gained a lot of experience on this project. Attempting to keep the back-end organized, making the front-end represent the design to the best of my abilities as a beginner.<br />
                         Using the root directory index as the website controller, URLs were quite verbose.<br />
@@ -47,7 +47,7 @@ export default function render() {
                         </figure>
                     </div>
                 </div>
-                <div className="columns is-vcentered">
+                <div className="columns">
                     <div className="column">
                         <figure>
                             <Image className="mx-auto" src="/projects/eunoia/layout.jpg" alt="Generified layout design" width={890} height={460}></Image>
