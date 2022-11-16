@@ -4,9 +4,9 @@ import 'css-doodle';
 export default function Doodle() {
     useEffect(() => {
         setInterval(() => {
-            const doodle: any = document.queryCommandSupported('css-doodle');
+            const doodle: any = document.querySelector('css-doodle');
             if (doodle) doodle.update();
-        }, 200);
+        }, 1000);
     }, []);
 
     return (
