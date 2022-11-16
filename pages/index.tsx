@@ -18,12 +18,9 @@ export async function getStaticProps(context: any) {
                 'eunoia',
                 'epiphany',
                 'izarooni',
-
                 'stoney-park',
-                'cloverms',
-
+                // 'cloverms',
                 'harbor',
-                'wonderking',
             ]
         }
     };
