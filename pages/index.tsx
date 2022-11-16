@@ -30,13 +30,6 @@ export async function getStaticProps(context: any) {
 };
 
 export default function Home(props: any) {
-    useEffect(() => {
-        setInterval(() => {
-            let doodle: any = document.querySelector('css-doodle');
-            if (doodle) doodle.update();
-        }, 1000);
-    });
-
     return (
         <>
             <Head>
