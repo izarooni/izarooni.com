@@ -14,41 +14,60 @@ export default function render() {
                 <p className="has-text-centered">Visit <a href="https://stoneycampgrounds.com" target="_blank" className="has-text-link">Stoney Campgrounds</a> to see this website in production!</p>
 
                 <h1 className="title">Initial Design</h1>
-                <div className="columns is-vcentered">
+                <div className="columns">
                     <div className="column content">
-                        Following the layout of any basic website, the design starts with a navigation bar at the top.
-                        <br />
-                        I decided immediately after the navigation bar should be an eye-catching header. For example a slide show or banner representing current events.
-                        <br />
-                        The contents of the remaining area depends on what page the user on.
+                        <p> A page typical layout has three sections to display a full page: header, content and footer. To keep it simple, I'll call it top, middle and bottom.</p>
+                        <p>
+                            The top section will contain our initial content such as the navbar, hero, etc.
+                            <br />
+                            It could also be optional on some pages but to help take space, we'll include it on all.
+                            <br />
+                            Most websites I've seen display their website logo on the far left of their navbar and put auth on the right.
+                        </p>
+                        <p>
+                            The bottom section is optional and mostly for footers. You can display various hyperlinks here such as business and contact information, sitemaps, account links, social media, etc.
+                        </p>
+                        <p>
+                            Because Stoney won't have user accounts (aside from web-admins), we can ignore the auth and display our logo next to our hyperlink menu.
+                        </p>
                     </div>
                     <div className="column">
                         <figure>
-                            <Image src="/projects/stoney-park/rev1.webp" alt="Screenshot of the first design" width="auto" height="auto" layout="responsive" objectFit="contain"></Image>
-                            <figcaption className="is-italic">Screenshot of the first design</figcaption>
+                            <Image src="/projects/stoney-park/layout.webp" alt="Screenshot of the first design" width={896} height={882} layout="responsive" objectFit="contain"></Image>
+                            <figcaption className="is-italic">Screenshot of the design layout</figcaption>
                         </figure>
                     </div>
                 </div>
             </div>
 
-            <div className="section">
-                <h1 className="title">Design Changes</h1>
-                <div className="columns is-vcentered">
-                    <div className="column">
-                        <figure>
-                            <Image src="/projects/stoney-park/rev2.webp" width="auto" height="auto" layout="responsive" objectFit="contain" />
-                            <figcaption className="is-italic">Screenshot of the latest design in a debug environment</figcaption>
-                        </figure>
-                    </div>
-                    <div className="column content">
-                        You'll notice that most websites have a logo on the very left of their main navigation bar. We followed this idea and had a logo created that can also be used as profile avatars on social media.
+            <div className="columns">
+                <div className="column">
+                    <figure>
+                        <Image src="/projects/stoney-park/rev2.webp" width={1152} height={1728} layout="responsive" objectFit="contain" />
+                        <figcaption className="is-italic">Screenshot of the latest design in a debug environment</figcaption>
+                    </figure>
+                </div>
+                <div className="column content">
+                    <p>
+                        Instead of putting auth in the far right corner of the navbar, I decided to put the Contact Us link.
+                        It's purpose is different from the other pages and I think it's good to have it visible everywhere.
+                    </p>
+                    <p>
+                        Initially creating each page, something needed to take space as there was very limited information given to me at the time of inital creation.
+                        <br />
+                        There was too much blank space, not enough words and not enough UI.
                         <br />
                         <br />
-                        The slide show has been replaced with a video of a drone capturing the surrounding area. If a picture can tell a thousand words, imagine what a video could say!
+                        The easy approach is to stick a giant image that can display text and has a decent aesthetic.
                         <br />
-                        <br />
-                        Additional pages were created to help customers see what campsites are like instead of having to rely on words and glorified pictures on social media. This was also due to insufficient resources, time and information.
-                    </div>
+                        There wasn't any necessarily bad, but none of them are eye-catching.
+                        <br/>
+                        I added a video taken by their drone that scans the horizon, horizontally and most importantly, steadily.
+                        <br/>
+                        The animation makes it eye-catching, the smooth pan over the horizon makes it aesthetic.
+                        <br/>
+                        Unfortunately I haven't figured out why mobile users (iOS users from my experience) aren't able to see it.
+                    </p>
                 </div>
             </div>
 
@@ -81,7 +100,7 @@ export default function render() {
                                 <figure>
                                     <Image src="/projects/stoney-park/reservation_production.webp" width={710} height={489} />
                                     <figcaption>
-                                       Screenshot of campsite availability in production. 
+                                        Screenshot of campsite availability in production.
                                     </figcaption>
                                 </figure>
                             </div>
