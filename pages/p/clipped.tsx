@@ -32,6 +32,10 @@ export default function render() {
                         <br />
                         The video feed in the main content area should be engaging and interactive.
                         <br />
+                        <br />
+                        When a video is hovered, a short preview should play with no audio.
+                        <br />
+                        To avoid rendering the full video for every video element, <a href="https://ffmpeg.org/" target="_blank" className='has-text-link'>FFMPEG</a> is used to create even shorter, downscaled videos with no audio. This process happens on the server after the video is uploaded.
                     </div>
                 </div>
 
@@ -39,11 +43,12 @@ export default function render() {
                 <div className='columns'>
                     <div className='column content'>
                         A user's profile will contain a video feed as well as certain buttons under the profile avatar. The buttons displayed will depend on if that profile belongs to the authenticated user.
-                        <br />
-                        <br />
-                        When a video is hovered, a short preview should play with no audio.
-                        <br />
-                        To avoid rendering the full video for every video element, <a href="https://ffmpeg.org/" target="_blank" className='has-text-link'>FFMPEG</a> is used to create even shorter, downscaled videos with no audio. This process happens after video uploading.
+                        <br/>
+                        <br/>
+                        If the profile doesn't belong to the authenticated user, a button with a heart is displayed, allowing that user to "subscribe" to that profile. This adds the avatar and username of the profile to the navigation bar menu where the authenticated user can easily access the profile.
+                        <br/>
+                        <br/>
+                        If the profile does belong to the end-user, three buttons are displayed: video upload, account settings and log-out.
                     </div>
                     <div className='column'>
                         <figure>
@@ -90,13 +95,13 @@ export default function render() {
                         To upload a video, simply drag and drop a video file into the upload box and the server will do the rest.
                     </div>
                     <div className='column'>
-                       <figure>
+                        <figure>
                             <video autoPlay loop muted playsInline>
                                 <source src="/projects/clipped/video_upload.webm" type="video/webm" />
                                 <source src="/projects/clipped/video_upload.mp4" type="video/mp4" />
                             </video>
                             <figcaption>Video demonstration of uploading a video</figcaption>
-                       </figure>
+                        </figure>
                     </div>
                 </div>
 
