@@ -16,19 +16,25 @@ export default function render() {
                 <h1 className="title">Initial Design</h1>
                 <div className="columns">
                     <div className="column content">
-                        <p> A page typical layout has three sections to display a full page: header, content and footer. To keep it simple, I'll call it top, middle and bottom.</p>
                         <p>
-                            The top section will contain our initial content such as the navbar, hero, etc.
-                            <br />
-                            It could also be optional on some pages but to help take space, we'll include it on all.
-                            <br />
-                            Most websites I've seen display their website logo on the far left of their navbar and put auth on the right.
+                            A typical box-model page layout has three sections: header, content and footer. To keep it simple, I'll call it top, middle and bottom.
                         </p>
                         <p>
-                            The bottom section is optional and mostly for footers. You can display various hyperlinks here such as business and contact information, sitemaps, account links, social media, etc.
+                            Our top section will contain eye-catching and important content such as the hero, navbar and login form.
+                            <br />
+                            Large renders can be optional on some pages (i.e., hero) but content fillers are needed so we'll include it on all pages.
                         </p>
                         <p>
-                            Because Stoney won't have user accounts (aside from web-admins), we can ignore the auth and display our logo next to our hyperlink menu.
+                            It's common for websites to put their logo on the far left of their navbar and login on the far right.
+                            Stoney won't have user accounts (aside from web-admins) allowing us to omit the login from the navbar.
+                            <br />
+                            Instead, web-admins can access login via hyperlink inside the footer.
+                            <br />
+                            Where the login button was removed, I decided to put the Contact Us link.
+                            It's purpose is different from the other pages and I think it's good to have it visible everywhere.
+                        </p>
+                        <p>
+                            Thanks to the templates system, our file structure is much cleaner as pages, components and sub-components can import each other creating a more readable and efficient work flow.
                         </p>
                     </div>
                     <div className="column">
@@ -40,34 +46,48 @@ export default function render() {
                 </div>
             </div>
 
+            <h1 className="title">Issues</h1>
             <div className="columns">
                 <div className="column">
                     <figure>
-                        <Image src="/projects/stoney-park/rev2.webp" width={1152} height={1728} layout="responsive" objectFit="contain" />
-                        <figcaption className="is-italic">Screenshot of the latest design in a debug environment</figcaption>
+                        <Image src="/projects/stoney-park/rev2.webp" width={1153} height={1153} layout="responsive" objectFit="contain" />
+                        <figcaption className="is-italic">Screenshot of design revision 2</figcaption>
                     </figure>
+
+                    <div className='column content mt-6'>
+                        <p>
+                            After a year of being in production, a few features have been modified, deprecated and added.
+                            <br />
+                            <ul>
+                                <li>A new button in the far right of the navbar was added. It toggles the website theme between dark and light mode.</li>
+                                <li>The CSS framework switched from Bootstrap to Tailwind making transitions, animations and styling so much easier.</li>
+                                <li>Rules page had a redesign making it easier to find the content you want using groups, icons and headers.</li>
+                                <li><span className='has-text-link'>/campsites</span> now redirects to <span className='has-text-link'>/map</span> to stay consistent with back-end naming schemes.</li>
+                                <li>Various layout changes were made to lessen the amount of space wasted on unncessary elements.</li>
+                            </ul>
+                        </p>
+                    </div>
                 </div>
                 <div className="column content">
                     <p>
-                        Instead of putting auth in the far right corner of the navbar, I decided to put the Contact Us link.
-                        It's purpose is different from the other pages and I think it's good to have it visible everywhere.
+                        Each page has too much blank space, not enough words and not enough UI.
+                        <br />
+                        The easy approach is to create a giant image element that can display text with a decent looking font.
+                        <br />
+                        <br />
+                        There wasn't many processed photos or videos forcing the majority of content for each page to be text or icons.
+                        <br />
+                        Fortuntely after a few days, I received a video of the campgrounds recorded via their drone. It pans left to right on the horizon, slowly and steadily. This slow pan helps grab the user's attention, and having it smooth makes it satisfying to watch.
                     </p>
                     <p>
-                        Initially creating each page, something needed to take space as there was very limited information given to me at the time of inital creation.
-                        <br />
-                        There was too much blank space, not enough words and not enough UI.
-                        <br />
-                        <br />
-                        The easy approach is to stick a giant image that can display text and has a decent aesthetic.
-                        <br />
-                        There wasn't any necessarily bad, but none of them are eye-catching.
-                        <br/>
-                        I added a video taken by their drone that scans the horizon, horizontally and most importantly, steadily.
-                        <br/>
-                        The animation makes it eye-catching, the smooth pan over the horizon makes it aesthetic.
-                        <br/>
-                        Unfortunately I haven't figured out why mobile users (iOS users from my experience) aren't able to see it.
+                        Other pages needing to display details for rules, amenities and services were filled with as much text as possible.
+                        Increased padding and margins helped greatly with spacing paragraphs along with Font Awesome icons to help comprehend blocks of text with just a few quick glances.
                     </p>
+
+                    <figure className='mt-6'>
+                        <Image src="/projects/stoney-park/rev3.webp" width={1277} height={1277} layout="responsive" objectFit="contain" />
+                        <figcaption className="is-italic">Screenshot of design revision 3 (latest)</figcaption>
+                    </figure>
                 </div>
             </div>
 
@@ -81,6 +101,17 @@ export default function render() {
                             <br />
                             <br />
                             One annoying thing is the checkout system. You can't redirect to Stripe's checkout page on the server side, you have to do it via JavaScript on the client side using their function. This could be avoided using AJAX requests but the checkout system has to be created in PHP due to the framework.
+                        </p>
+                        <p className='my-6'>
+                            <span className='has-text-weight-bold'>Stripe Integration Update 2022</span>
+                            <br/>
+                            The checkout system has been reworked to use the fetch API. The server creates a Stripe checkout session and forwards the ID via JSON response.
+                            <br/>
+                            Releated code had to be changed, especially with the updated UI but it was worth it in the end.
+                            <br/>
+                            Previously, UX required the user to process two pages. The checkout button redirects to a blank page which redirects to Stripe's payment page.
+                            <br/>
+                            Now the checkout button redirects to Stripe's payment page directly!
                         </p>
                         <h5 className="title">Reservations</h5>
                         <p>
